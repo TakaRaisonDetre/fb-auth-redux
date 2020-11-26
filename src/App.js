@@ -1,9 +1,12 @@
 import React , {Component}from 'react'
 import './App.css';
-import SignIn from './pages/sign-in.screen'
+
 import {Switch, Route} from 'react-router-dom'
 import {auth, createUserProfileDocument } from './firebase/firebase.utils'
 import Header from './components/header/header'
+import SignUpPage from './pages/sign-up.screen';
+import SignInPage from './pages/sign-in.screen'
+
 
 class App extends React.Component {
   constructor(){
@@ -49,7 +52,8 @@ class App extends React.Component {
       <div className="App">
         <Header currentUser={this.state.currentUser} />
       <Switch>
-        <Route path='/signin' component={SignIn}/>
+        <Route path='/signin' component={SignInPage}/>
+        <Route path='/signup' component={SignUpPage}/>
       </Switch>
      
       <div>harahara
