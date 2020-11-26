@@ -4,15 +4,9 @@ import 'firebase/auth'
 
 
 const config ={
-    apiKey: "AIzaSyDm6F-HlQOOM2yO00wiNkdyL3FpbiX88yA",
-    authDomain: "fir-auth-redux-e5726.firebaseapp.com",
-    databaseURL: "https://fir-auth-redux-e5726.firebaseio.com",
-    projectId: "fir-auth-redux-e5726",
-    storageBucket: "fir-auth-redux-e5726.appspot.com",
-    messagingSenderId: "1033762965069",
-    appId: "1:1033762965069:web:980597150d4235536d3e04",
-    measurementId: "G-HHPM7KY2XL"
+
 }
+   
 firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
