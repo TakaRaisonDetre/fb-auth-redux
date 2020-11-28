@@ -1,11 +1,11 @@
 import React from 'react'
 
-
+import Button from '@material-ui/core/Button';
 
 
  function CustomButton({ children, ...otherProps}) {
     return (
-      <button {...otherProps}> {children} </button>
+      <Button  type="button"  {...otherProps}> {children} </Button>
     )
 }
 export default CustomButton
